@@ -1,0 +1,45 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Hyprland / Wayland Specifics
+# Adjust paths if your Hyprland cache/logs are elsewhere
+.cache/hyprland/
+hyprland.log
+hyprland_crash_report
+
+# General Cache and Log Files
+*.log
+*.cache
+*/cache/
+tmp/
+temp/
+
+# Editor and IDE Specific Files
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+tags
+cscope.out
+*.bak
+
+# Build Artifacts and Compiled Output
+build/
+target/
+dist/
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+
+# Arch Linux Package Build Artifacts (if versioning PKGBUILDs)
+pkg/
+src/
