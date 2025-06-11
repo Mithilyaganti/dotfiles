@@ -23,7 +23,11 @@
   "hyprland/workspaces": { "disable-scroll": true, "all-outputs": true, "format": "{icon}", "format-icons": { "active": "", "default": "" } },
   "hyprland/window": { "format": "{}", "max-length": 35, "separate-outputs": true },
   "custom/bluetooth_battery": { "return-type": "json", "exec": "bash $HOME/.config/scripts/bluetooth_battery.sh", "interval": 15, "on-click": "blueman-manager", "tooltip": true },
-  "network": { "format-wifi": "{signalStrength}% ", "format-disconnected": "Disconnected ⚠", "on-click": "nm-connection-editor" },
+  "network": { 
+    "format-wifi": "{essid} ", 
+    "format-disconnected": "Disconnected ⚠", 
+    "on-click": "nm-connection-editor" 
+  },
   "custom/audio": { "return-type": "json", "exec": "bash $HOME/.config/scripts/audio_details.sh", "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%", "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%", "on-click": "pavucontrol", "interval": "once", "signal": 8 },
   "battery": { "states": { "warning": 30, "critical": 15 }, "format": "{capacity}% {icon}", "format-charging": "{capacity}% ", "format-plugged": "{capacity}% ", "format-icons": ["", "", "", "", ""], "interval": 10 },
   "clock": { "format": "{:%R}", "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>" },
