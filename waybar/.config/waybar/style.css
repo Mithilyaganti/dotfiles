@@ -19,8 +19,8 @@ window#waybar {
   background-color: @background;
   border: 1px solid alpha(@foreground, 0.1);
   border-radius: 25px;
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin-top: 3px;
+  margin-bottom: 0px;
 }
 
 .modules-left { margin-left: 10px; }
@@ -41,10 +41,9 @@ window#waybar {
     padding: 0 9px;
 }
 
-/* *** THIS IS THE FIX *** */
 /* Specific style for the notification module to add space on the right */
 #custom-notifications {
-    padding-right: 15px; /* Increase this value for more space */
+    padding-right: 10px; /* Increase this value for more space */
     padding-left: 9px;
 }
 #custom-notifications.notifications-critical {

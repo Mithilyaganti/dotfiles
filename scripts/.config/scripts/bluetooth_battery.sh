@@ -16,7 +16,6 @@ for mac_address in $devices; do
     info=$(bluetoothctl info "$mac_address")
     name=$(echo "$info" | grep "Name:" | cut -d' ' -f2-)
 
-    # *** THE FIX IS IN THIS LINE ***
     # We now use awk to grab the 4th field (the decimal value) and remove the parentheses.
     battery=$(echo "$info" | awk '/Battery Percentage:/ {gsub(/[()]/,"",$4); print $4}')
 

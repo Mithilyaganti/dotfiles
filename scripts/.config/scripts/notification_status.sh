@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# A robust script to ensure the notification icon is always visible.
-
 # First, check if the swaync-client command exists.
 if ! command -v swaync-client &> /dev/null; then
     echo "{}" # Output empty JSON to hide module if swaync isn't installed.
@@ -34,9 +32,7 @@ else
     class="notifications"
 fi
 
-# *** THIS IS THE KEY TO CONSISTENCY ***
 # If there are no notifications at all, just show the icon without a number.
-# This guarantees the module is always visible.
 if [ "$count" -eq 0 ]; then
     text="$icon"
 fi
