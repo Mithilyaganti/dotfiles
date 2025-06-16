@@ -2,8 +2,9 @@
 @import "/home/mithil/.cache/wal/colors-waybar.css";
 
 * {
-    font-family: Mononoki, "Font Awesome 6 Free";
-    font-size: 13px; /* Adjusted from your previous file */
+    /*font-family: Mononoki, "Font Awesome 6 Free"; */ 
+    font-family: "Hack Nerd Font", FontAwesome, sans-serif;
+    font-size: 13px; 
     font-weight: bold;
     border-radius: 10px;
 }
