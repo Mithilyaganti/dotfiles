@@ -34,6 +34,8 @@ window#waybar {
 #window { font-weight: normal; font-style: italic; }
 
 /* General style for most modules on the right */
+#backlight,
+#power-profiles-daemon,
 #custom-bluetooth_battery,
 #network,
 #custom-audio,
