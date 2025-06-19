@@ -44,10 +44,19 @@ window#waybar {
     padding: 0 9px;
 }
 
+#battery{
+    padding-left: 0px;
+}
+
+#custom-bluetooth_battery{
+    padding-right: 0px;
+    margin-right: -15px;
+}
+
 /* Specific style for the notification module to add space on the right */
 #custom-notifications {
     padding-right: 10px; /* Increase this value for more space */
-    padding-left: 9px;
+    padding-left: 4px;
 }
 #custom-notifications.notifications-critical {
     color: @color1;
